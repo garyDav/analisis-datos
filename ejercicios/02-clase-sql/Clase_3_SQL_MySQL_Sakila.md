@@ -138,8 +138,9 @@ USE sakila; SHOW TABLES;
 
 Consulta rapida:
 
-```bash
-docker exec -it mysql-sakila mysql -uroot -proot123 -e "USE sakila; SELECT COUNT(*) AS total_films FROM film;"
+```sql
+USE sakila;
+SELECT COUNT(*) AS total_films FROM film;
 ```
 
 ---
