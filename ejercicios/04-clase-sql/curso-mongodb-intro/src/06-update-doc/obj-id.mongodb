@@ -1,0 +1,12 @@
+use("store")
+
+db.products.updateOne(
+  // query | filtros
+  { _id: ObjectId("62f573dcab088f7ebb862f75") },
+  // change => operators
+  {
+    $inc: {
+      price: 2000,
+    }
+  }
+)

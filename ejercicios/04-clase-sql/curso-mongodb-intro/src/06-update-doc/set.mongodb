@@ -1,0 +1,14 @@
+use("store")
+
+db.products.updateOne(
+  // query | filtros
+  { _id: 2 },
+  // change => operators
+  {
+    $set: {
+      name: 'Change name Product 2',
+      price: 2000,
+      tags: ['A', 'B', 'C']
+    }
+  }
+)

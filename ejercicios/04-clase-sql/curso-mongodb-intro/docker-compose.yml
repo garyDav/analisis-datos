@@ -1,0 +1,12 @@
+version: '3.9'
+
+services:
+  curso-mongodb:
+    image: mongo:5.0
+    ports:
+      - 27019:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root123
+    volumes:
+      - ./mongo_data:/data/db
