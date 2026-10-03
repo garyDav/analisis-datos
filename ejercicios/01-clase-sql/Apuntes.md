@@ -19,11 +19,35 @@ cd [carpeta/ruta]
 cd ..
 # listar carpetas / archivos
 ls
+# Crear directorio o carpeta
+mkdir [nombre-carpeta]
 ```
+
+### Instalar Docker
+
+* Buscar: Activar o desactivar las características de Windows
+
+* Activar: Hyper-V
+
+* Activar: Plataforma de máquina virtual
+
+* Activar: Plataforma de hipervisor de Windows
+
+* Activar: Subsistema de Windows para Linux
+
+* Administrador de tareas -> Rendimiento -> CPU -> Verificar: Virtualización "Habilitado"
+
+* Si no: Bios -> Advance CPU o Configuration o Processor Settings -> Buscar: Intel VT-x o AMD-V o Virtualization Technology -> Enable
+
+* Reiniciar e Intalar Docker
 
 ### Comandos Docker Compose
 
 ```bash
+# Version de Docker
+docker --version
+# Version de Docker Compose
+docker compose version
 # Que servicios están levantados
 docker compose ps
 # Levantar los contenedores
